@@ -6,8 +6,9 @@ const time_line = document.querySelector("header .time_line");
 const timeText = document.querySelector(".timer .time_left_txt");
 const timeCount = document.querySelector(".timer .timer_sec");
 
-start_btn.addEventListener('click'), (event)=>
+start_btn.addEventListener('click')
 {
+    
 quiz_box.classList.add("activeQuiz");  
 showQuetions(0); 
     queCounter(1); 
@@ -133,7 +134,7 @@ function startTimerLine(time){
 }
 
 function queCounter(index){
-    //creating a new span tag and passing the question number and total question
+    
     let totalQueCounTag = '<span><p>'+ index +'</p> of <p>'+ questions.length +'</p> Questions</span>';
-    bottom_ques_counter.innerHTML = totalQueCounTag;  //adding new span tag inside bottom_ques_counter
+    bottom_ques_counter.innerHTML = totalQueCounTag; 
 }
