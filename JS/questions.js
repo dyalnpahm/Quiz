@@ -1,14 +1,14 @@
-// creating an array and passing the number, questions, options, and answers
+
 let questions = [
   {
   numb: 1,
   question: "Arrays in JavaScript are defined by which of the following statements?",
   answer: "It is an ordered list of values",
   options: [
-    " It is an ordered list of values",
+    "It is an ordered list of values",
     "It is an ordered list of objects",
     "It is an ordered list of string",
-    "It is an ordered list of functions"
+    "It is an ordered list of functions",
   ]
 },
   {
