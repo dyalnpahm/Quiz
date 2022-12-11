@@ -26,11 +26,11 @@ continue_btn.onclick = ()=>{
     quiz_box.classList.add("activeQuiz"); 
     showQuetions(0);
     queCounter(1); 
-    startTimer(15); 
+    startTimer(30); 
     startTimerLine(0); 
 }
 
-let timeValue =  15;
+let timeValue =  30;
 let que_count = 0;
 let que_numb = 1;
 let userScore = 0;
@@ -45,17 +45,16 @@ const quit_quiz = result_box.querySelector(".buttons .quit");
 restart_quiz.onclick = ()=>{
     quiz_box.classList.add("activeQuiz"); 
     result_box.classList.remove("activeResult"); 
-    timeValue = 15; 
+    timeValue = 30; 
     que_count = 0;
     que_numb = 1;
     userScore = 0;
     widthValue = 0;
     showQuetions(que_count); 
     queCounter(que_numb); 
-    clearInterval(counter); 
-    clearInterval(counterLine); 
-    startTimer(timeValue); 
-    startTimerLine(widthValue); 
+    
+    
+   
     timeText.textContent = "Time Left"; 
     next_btn.classList.remove("show"); 
 }
@@ -75,15 +74,13 @@ next_btn.onclick = ()=>{
         que_numb++;
         showQuetions(que_count); 
         queCounter(que_numb);
-        clearInterval(counter); 
-        clearInterval(counterLine); 
-        startTimer(timeValue); 
-        startTimerLine(widthValue); 
+      
+        
+       
         timeText.textContent = "Time Left"; 
         next_btn.classList.remove("show"); 
     }else{
-        clearInterval(counter); 
-        clearInterval(counterLine); 
+        
         showResult(); 
     }
 }
@@ -114,8 +111,7 @@ let crossIconTag = '<div class="icon cross"><i class="fas fa-times"></i></div>';
 
 
 function optionSelected(answer){
-    clearInterval(counter); 
-    clearInterval(counterLine); 
+   
     let userAns = answer.textContent; 
     let correcAns = questions[que_count].answer; 
     const allOptions = option_list.children.length; 
