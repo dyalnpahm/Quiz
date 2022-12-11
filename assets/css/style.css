@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.info-title {
+    padding-top: 20%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    font-size: 30px;
+}
+.info-list {
+    text-align: center;
+    font-size: 25px;
+}
+
+.start_btn button {
+    padding-left: 47%;
+    padding-top: 2%;
+    font-size: 25px;
+    font-weight: 500;
+    color: #007bff;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    background: white;
+    cursor: pointer;
+}
