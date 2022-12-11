@@ -6,9 +6,10 @@ const time_line = document.querySelector("header .time_line");
 const timeText = document.querySelector(".timer .time_left_txt");
 const timeCount = document.querySelector(".timer .timer_sec");
 
-start_btn.addEventListener('click')
+start_btn.getElementById('start_btn').addEventListener('click'), function (){
+}
 {
-    
+
 quiz_box.classList.add("activeQuiz");  
 showQuetions(0); 
     queCounter(1); 
